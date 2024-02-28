@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* CSS reset */
 * {
   margin: 0;
@@ -19,9 +20,7 @@ textarea,
 select {
   font: inherit;
 }
-/*
-    7. Avoid text overflows
-  */
+
 p,
 h1,
 h2,
@@ -34,4 +33,257 @@ h6 {
 
 /* ---------------------- General ---------------------- */
 
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clrs-primary-: hsla(16, 100%, 50%, 0.8);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+  background-color: whitesmoke;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ---------------------- Reusable ---------------------- */
+
+section {
+  min-height: 100vh;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: var(--clrs-primary-);
+  border: 2px solid var(--clrs-primary-);
+}
+
+.btn:hover,
+.btn:active {
+  color: var(--clrs-primary-);
+  background-color: transparent;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
 /* ---------------------- Header ---------------------- */
+
+.header {
+  font-weight: 500;
+  padding: 0px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  font-size: 2.2rem;
+  background-color: transparent;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  height: 100px;
+}
+
+.nav__links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.link {
+  transition: 0.3s all ease-in-out;
+}
+
+.link:hover,
+.link:active {
+  color: var(--clrs-primary-);
+}
+
+.book__btn:link,
+.book__btn:visited {
+  padding: 12px 25px;
+  border-radius: 30px;
+}
+
+/* Profile page*/
+/* landing destination */
+/* hero-section*/
+
+/* ---------------------- Hero Section ---------------------- */
+
+.hero__section {
+  position: relative;
+}
+
+.hero__section__bg {
+  background: url(https://images.unsplash.com/photo-1530521954074-e64f6810b32d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover; /* Updated property */
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.hero__section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  z-index: 10;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.hero__section__content h1 {
+  font-size: 7rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+}
+
+.hero__section__content p {
+  max-width: 900px;
+  line-height: 1.7;
+}
+
+.join__btn {
+  width: 600px;
+  max-width: 200px;
+  padding: 20px 30px;
+  background-color: var(--clrs-primary-);
+  border: 2px solid var(--clrs-primary-);
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.join__btn:hover {
+  background-color: transparent;
+  color: var(--clrs-primary-);
+}
+
+.join__btn:active {
+  transform: scale(0.98);
+}
+
+/*---------------------- Destinations Section----------------------*/
+
+.destinations__section {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1f1c2c, #2f2e31);
+  color: #fff;
+  text-align: center;
+  padding: 200px;
+}
+
+.destinations__section h2 {
+  font-size: 6rem;
+  margin-bottom: 100px;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  box-shadow: 0px 0px 80px rgba(255, 68, 0, 0.1);
+}
+
+.grid {
+  height: 500px;
+  width: 100%;
+  text-align: start;
+}
+
+.grid p {
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.grid__2,
+.grid__4,
+.grid__6 {
+  padding: 0px 30px;
+}
+
+.grid__2 {
+  background-color: #53354a;
+}
+
+.grid__4 {
+  background-color: #2b2e4a;
+}
+
+.grid__6 {
+  background-color: #903749;
+}
+
+.grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.grid h3 {
+  font-size: 2.8rem;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+
+.grid a:link,
+.grid a:visited {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  border: 2px solid gray;
+  transition: all 0.3s ease;
+}
+
+.grid a:hover {
+  color: hsla(16, 81%, 46%, 0.8);
+  background-color: transparent;
+  border: 2px solid hsla(16, 81%, 46%, 0.8);
+}
