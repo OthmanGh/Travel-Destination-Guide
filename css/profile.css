@@ -1,0 +1,60 @@
+.header {
+  position: fixed;
+  background: linear-gradient(45deg, #16222a, #000000);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.profile-grid {
+  min-height: 100vh;
+  background-color: #16222a;
+  color: var(--clrs-primary-);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 0;
+}
+
+.profile-text {
+  max-width: 600px;
+}
+
+.profile-text h1,
+.profile-text h2 {
+  margin-bottom: 20px;
+}
+
+.profile-text p {
+  color: #fff;
+  line-height: 1.7;
+}
+
+form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea,
+input,
+button {
+  background-color: #16222a;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #686363;
+}

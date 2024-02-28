@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-g3ZvZ1Q5+kGksKcQwqiXLOHvloFbld49lYMHjc8J/GI7itNMP9vh0BnV7NtTwmyv4W+0cxuHcr5hoEODL3zWsA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Travel Destination Guide</title>
   </head>
@@ -11,10 +19,10 @@
     <header class="header">
       <nav class="nav__links">
         <ul>
-          <a href="#" class="link"><li>Home</li> </a>
-          <a href="#" class="link"><li>About Us</li> </a>
-          <a href="#" class="link"><li>Destination</li> </a>
-          <a href="#" class="link"><li>Profile Page</li> </a>
+          <li><a href="#home" class="link">Home</a></li>
+          <li><a href="#" class="link">About Us</a></li>
+          <li><a href="#destinations" class="link">Destination</a></li>
+          <li><a href="./pages/profile.html" class="link">Profile Page </a></li>
         </ul>
 
         <a class="book__btn btn" id="book__btn" href="#">Book Now</a>
@@ -22,7 +30,7 @@
     </header>
 
     <main>
-      <section class="hero__section">
+      <section class="hero__section" id="home">
         <div class="hero__section__bg">
           <div class="hero__section__content">
             <h1>Horizon Adventures</h1>
@@ -37,7 +45,7 @@
         <div class="overlay"></div>
       </section>
 
-      <div class="destinations__section">
+      <div class="destinations__section" id="destinations">
         <h2>Hot Destinations</h2>
 
         <div class="grid__container">
@@ -85,66 +93,30 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+
+    <footer class="footer__grid">
+      <ul class="col1__list list">
+        <li><h4 class="footer__heads">Quick Links</h4></li>
+        <li><a class="footer__link" href="#home">Home</a></li>
+        <li><a class="footer__link" href="#">About Us</a></li>
+        <li><a class="footer__link" href="#destinations">Destination</a></li>
+        <li><a class="footer__link" href="./pages/profile.html">Contact</a></li>
+      </ul>
+
+      <ul class="col2__list list">
+        <li><h4 class="footer__heads">Contack Info</h4></li>
+
+        <li><i class="fas fa-home custom-color"></i> <span>Adventure City, AZ 98765</span></li>
+        <li><i class="fas fa-envelope custom-color"></i><span>contact@skywardtravel.agency</span></li>
+        <li><i class="fas fa-phone"></i> <span>+123-456-7890</span></li>
+      </ul>
+
+      <ul class="col3__list list">
+        <li><h4 class="footer__heads">Make A Reservation</h4></li>
+        <li><span>our Support & Sales Team is Available 24/7 To Answer Your Queries</span></li>
+        <li><button class="footer__book__btn btn">Book Now</button></li>
+      </ul>
+      <hr />
+    </footer>
   </body>
 </html>
-
-<!-- Cinque Terre, SP, Italy: a collection of five vibrant coastal villages perched on the Italian Riviera. With its colorful houses, scenic hikes,
-and fresh seafood, it's a UNESCO gem perfect for adventurers and romantics alike. Welcome to the magic of Cinque Terre. -->
-
-<!-- <section class="destinations__section">
-        <h2>Hot Destinations</h2>
-        <p>The first place to look for environmentally friendly holidays</p>
-
-        <div class="destination__flex">
-          <a href="#" class="destination__link">
-            <article class="destination__container">
-              <div class="destination__image__container">
-                <img
-                  src="https://images.unsplash.com/photo-1617334140746-03dc1cc27593?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                />
-              </div>
-
-              <div class="destination__content__container">
-                <h3>Discover Cinque Terre, SP, Italy</h3>
-                <p>
-                  Cinque Terre, SP, Italy: a collection of five vibrant coastal villages perched on the Italian Riviera. With its colorful houses, scenic hikes,
-                  and fresh seafood, it's a UNESCO gem perfect for adventurers and romantics alike. Welcome to the magic of Cinque Terre.
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <a href="#" class="destination__link">
-            <article class="destination__container">
-              <div class="destination__image__container">
-                <img
-                  src="https://images.unsplash.com/photo-1617334140746-03dc1cc27593?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                />
-              </div>
-
-              <div class="destination__content__container">
-                <h3>Discover Cinque Terre, SP, Italy</h3>
-                <p>
-                  Cinque Terre, SP, Italy: a collection of five vibrant coastal villages perched on the Italian Riviera. With its colorful houses, scenic hikes,
-                  and fresh seafood, it's a UNESCO gem perfect for adventurers and romantics alike. Welcome to the magic of Cinque Terre.
-                </p>
-              </div>
-            </article>
-          </a>
-
-          <article class="destination__container">
-            <div class="destination__image__container">
-              <img
-                src="https://images.unsplash.com/photo-1617334140746-03dc1cc27593?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-
-            <div class="destination__content__container">
-              <h3>Discover Cinque Terre, SP, Italy</h3>
-              <p>Cinque Terre, SP, Italy</p>
-            </div>
-          </article>
-        </div>
-        <button class="join__btn btn margin-bottom">show more</button>
-      </section> -->

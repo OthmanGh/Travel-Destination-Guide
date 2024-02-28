@@ -287,3 +287,54 @@ section {
   background-color: transparent;
   border: 2px solid hsla(16, 81%, 46%, 0.8);
 }
+
+/*---------------------- Footer----------------------*/
+
+.footer__grid {
+  background: linear-gradient(45deg, #16222a, #3a6073);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 100px 400px;
+}
+
+.footer__grid ul {
+  list-style: none;
+}
+
+.footer__grid ul .footer__heads {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: var(--clrs-primary-);
+}
+
+.footer__grid ul li {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.custom-color {
+  color: hsla(16, 100%, 50%, 0.8);
+}
+
+.footer__link {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: hsla(16, 100%, 50%, 0.458);
+}
+
+.footer__book__btn {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer__grid hr {
+  grid-column: 1 / -1;
+}
